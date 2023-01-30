@@ -1,0 +1,45 @@
+.s-1 {
+    background-color: lightblue;
+    .container {
+        @include goflex(row, space-around, flex-start);
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid red;
+        height: 500px;
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: $mycolor1;
+            border: 1px solid black;
+            &:first-child {
+                background-color: black;
+            }
+            &:nth-child(2) {
+                background-color: green;
+            }
+            &:last-child {
+                background-color: red;
+            }
+        }
+    }
+}
+.s-2 {
+    background-color: lightcoral;
+    .container {
+        @include goflex(row, space-between, flex-end);
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        height: 400px;
+        border: 2px solid black;
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    }
+}
