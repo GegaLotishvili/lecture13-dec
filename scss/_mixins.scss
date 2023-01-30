@@ -4,3 +4,9 @@
     justify-content: $justify;
     align-items: $align;
 }
+
+@mixin mycontainer($maxwidth: 1170px, $width: 100%) {
+    max-width: $maxwidth;
+    width: $width;
+    margin: 0 auto;
+}
